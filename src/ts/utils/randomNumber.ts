@@ -1,3 +1,3 @@
-export default function randomNumber(lowerThan: number = 20) {
-	return Math.ceil(Math.random() * lowerThan);
+export default function randomNumber(lowerThan: number = 5) {
+  return Math.ceil(Math.random() * lowerThan);
 }
