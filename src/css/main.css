@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+	--main-blue: #00b4d8;
+}
+
+* {
+	user-select: none;
+}
+
+html {
+	height: 98vh;
+}
+
+body {
+	display: grid;
+	place-items: center;
+	height: 100%;
+	font-family: "Inter", sans-serif;
+	background-color: #f8f8f8;
+}
+
+#app {
+	width: min(25rem, 100%);
+	height: fit-content;
+	margin-left: 20px;
+	margin-right: 20px;
+	background-color: white;
+	box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+		0 4px 6px -4px rgb(0 0 0 / 0.1);
+	display: grid;
+	grid-template-columns: 1fr / 1fr;
+	border-radius: 0.5rem;
+}
+#app #timer {
+	margin: 0;
+	display: grid;
+	place-items: center;
+	font-size: 4rem;
+}
+
+button {
+	all: unset;
+	background: var(--main-blue);
+	color: white;
+	padding: 15px 20px;
+	cursor: pointer;
+	box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+		0 2px 4px -2px rgb(0 0 0 / 0.1);
+	border-radius: 0.25rem;
+	font-size: 1rem;
+	margin-top: 20px;
+}
+
+.control {
+	display: flex;
+	align-items: start;
+	justify-content: center;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center !important;
+	padding-bottom: 50px;
+}
+
+.control.playing :is(input, h2) {
+	display: block;
+}
+
+input {
+	outline: none;
+	border: none;
+	box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+		0 4px 6px -4px rgb(0 0 0 / 0.1);
+	border-radius: 0.25rem;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+.score {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#score {
+	margin-left: 5px;
+}
